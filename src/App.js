@@ -52,10 +52,12 @@ const App = () => {
   };
 
   const showAlert = (msg, type = '') => {
+    console.log('show alert called', msg, type);
     if (msg == null) {
       setAlert(null);
     } else {
-      setAlert({ alert: { msg, type } });
+      console.log('else called');
+      setAlert({ msg, type });
     }
   };
 
