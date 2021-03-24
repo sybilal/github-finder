@@ -11,6 +11,12 @@ import {
   GET_REPOS,
 } from '../types';
 
+let githubClientId;
+let githubClientSecret;
+if(process.env.NODE_ENV !== 'production'){
+  
+}
+
 const GithubState = (props) => {
   const initialState = {
     users: [],
